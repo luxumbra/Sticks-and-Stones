@@ -55,18 +55,23 @@
             height: auto;
         }
         
-        p,
-        p + p + p{
+        p {
             color: #737779;
+            font-size: 1.4rem;
+            font-family: 'Ubuntu';
+        }
+        .strapline,
+        .contact {
             font-family: 'Jim Nightshade', cursive;
             font-size: 1.6rem;
             margin-bottom: 0;
-            text-align: center;
+            text-align: center; 
         }
-        p + p {
-            font-size: 1.4rem;
-            font-family: 'Ubuntu';
-            margin: 2rem auto;
+        .strapline {
+            margin-bottom: 2rem;
+        }
+        .contact {
+            margin-top: 2rem;
         }
         a {
             color: #737779;
@@ -77,6 +82,7 @@
         .brand {
             color: #737779;
             font-family: 'IM Fell English SC';
+            font-size: 1.6rem;
         }
         .brand .and {
             color: #C80000;
@@ -90,9 +96,9 @@
     <div class="grid-x grid-padding-x align-middle init">
       <div class="small-6 large-8 small-offset-3 large-offset-2 cell">
         <img src="./img/logo.svg" alt="Sticks &amp; Stones">
-        <p>Artisan Wood and Stone work from the Isle of Man</p>
-        <p><span class="brand">Sticks <span class="and">&</span> Stones</span> is a small family run business based on the Isle of Man.  Our ethos is to create hand crafted items for your home that  echo the beauty and character that can be found all over this island we are proud to call, Home or <em>Thie my chree</em>.</p>
-        <p><a href="mailto:hello@sticksandstones.im" title="Email Sticks &amp; Stones">hello@sticksandstones.im</a> | 07624 231251</p>
+        <p class="strapline">Artisan Wood and Stone work from the Isle of Man</p>
+        <p><span class="brand">Sticks <span class="and">&</span> Stones</span> is a small family run business based in Peel, on the Isle of Man.  Our ethos is to create hand crafted items for your home that echo the beauty and character that can be found all over this island we are proud to call, Home or <em>Thie my chree</em>.</p>
+        <p class="contact"><a href="mailto:hello@sticksandstones.im" title="Email Sticks &amp; Stones">hello@sticksandstones.im</a> | 07624 231251</p>
       </div>
     </div>
   </div>
