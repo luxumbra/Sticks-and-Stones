@@ -32,32 +32,46 @@
             text-align: center;
         }
         .init {
-            height: 100vw;
+            height: 100vh;
+        }
+        .init .cell {
+            height: 50%;
+            max-height: 300px;
         }
         h1 {
             text-align: center;
         }
         img {
-            width: 33%;
+            width: 75%;
+            max-width: 100%;
             height: auto;
         }
+        
         p {
             color: #737779;
             font-family: 'Jim Nightshade', cursive;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
+            margin-bottom: 0;
             text-align: center;
+        }
+        p + p {
+            font-size: 1.4rem;
         }
         a {
             color: #737779;
+        }
+        a:hover {
+            color: #475D67;
         }
     </style>
 </head>
 
 <body>
   <div class="grid-container">
-    <div class="grid-x grid-padding-x init">
-      <div class="small-6 large-8 small-offset-3 large-offset-2 align-middle cell">
-        <img src="./img/sticks-logo.svg" alt="Sticks &amp; Stones">
+    <div class="grid-x grid-padding-x align-middle init">
+      <div class="small-6 large-8 small-offset-3 large-offset-2 cell">
+        <img src="./img/logo.svg" alt="Sticks &amp; Stones">
+        <p>Artisan Wood and Stone work from the Isle of Man</p>
         <p><a href="mailto:hello@sticksandstones.im" title="Email Sticks &amp; Stones">hello@sticksandstones.im</a> | 07624 231251</p>
       </div>
     </div>
