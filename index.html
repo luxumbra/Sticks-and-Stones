@@ -43,17 +43,27 @@
         }
         .init {
             border-bottom: 5px solid #C80000;
-            height: 100vh;
+            min-height: 100%;
+        }
+        .init .leader {
+            background-color: #2B383E;
+            border-top: 3px solid #C80000;
+            border-bottom: 3px solid #C80000;
+            padding: 2rem 0;
+            -webkit-box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
+            -moz-box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
+            box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
         }
         .init .cell {
-        }
+            padding: 2rem 0;
+        } 
         h1 {
             text-align: center;
         }
         h2, h3 {
             color: #737779;
             font-family: 'IM Fell English SC', cursive;
-            font-size: 2rem;
+            font-size: 2.6rem;
         }
         img.logo {
             width: 75%;
@@ -102,12 +112,15 @@
                 font-size: 1.8rem;
             }
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             
             .strapline,
             .contact {
                 font-size: 1.4rem;
+            }
+            .brand {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -116,10 +129,16 @@
 <body class="holding">
   <div class="grid-container">
     <div class="grid-x grid-padding-x align-middle init">
-      <div class="small-10 large-8 small-offset-1 large-offset-2 cell">
-        <img src="./img/logo.svg" alt="Sticks &amp; Stones" class="logo">
-        <p class="strapline">Artisan Wood and Stone work from the Isle of Man</p>
-        <p><span class="brand">Sticks <span class="and">&</span> Stones</span> is a small family run business based in Peel, on the Isle of Man.  Our ethos is to create hand crafted items for your home that echo the beauty and character that can be found all over this island we are proud to call, Home or <em>Thie My Chree</em>.</p>
+        <div class="small-10 large-8 small-offset-1 large-offset-2 cell header">
+         <img src="./img/logo.svg" alt="Sticks &amp; Stones" class="logo">
+         <p class="strapline">Artisan Wood and Stone work from the Isle of Man</p>
+        </div>
+      <div class="small-12 large-12 cell leader">
+       <div class="grid-x grid-padding-x align-middle">
+           <div class="small-10 large-8 small-offset-1 large-offset-2 cell">
+                       <p><span class="brand">Sticks <span class="and">&</span> Stones</span> is a small family run business based in Peel, on the Isle of Man.  Our ethos is to create hand crafted items for your home that echo the beauty and character that can be found all over this island we are proud to call, Home or <em>Thie My Chree</em>.</p>
+           </div>
+       </div>
       </div>
       <div class="small-10 large-8 small-offset-1 large-offset-2 cell products">
         <h2>Products</h2>
