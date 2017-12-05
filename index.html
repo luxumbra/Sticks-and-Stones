@@ -45,7 +45,8 @@
             border-bottom: 5px solid #C80000;
             min-height: 100%;
         }
-        .init .leader {
+        .init .leader,
+        footer {
             background-color: #2B383E;
             border-top: 3px solid #C80000;
             border-bottom: 3px solid #C80000;
@@ -53,6 +54,9 @@
             -webkit-box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
             -moz-box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
             box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
+        }
+        footer {
+            background-color: #313743;
         }
         .init .content,
         .header {
@@ -71,6 +75,10 @@
             max-width: 100%;
             min-width: 200px;
             height: auto;
+        }
+        .crafted-logo {
+            width: 25%;
+            max-width: 100%;
         }
         
         p {
@@ -130,27 +138,33 @@
 <body class="holding">
   <div class="grid-container">
     <div class="grid-x grid-padding-x align-middle init">
-        <div class="small-10 large-8 small-offset-1 large-offset-2 cell header">
+        <header class="small-10 large-8 small-offset-1 large-offset-2 cell header">
          <img src="./img/logo.svg" alt="Sticks &amp; Stones" class="logo">
          <p class="strapline">Artisan Wood and Stone work from the Isle of Man</p>
-        </div>
-      <div class="small-12 large-12 cell leader">
+        </header>
+      <section class="small-12 large-12 cell leader">
        <div class="grid-x grid-padding-x align-middle">
            <div class="small-10 large-8 small-offset-1 large-offset-2 cell">
                        <p><span class="brand">Sticks <span class="and">&</span> Stones</span> is a small family run business based in Peel, on the Isle of Man.  Our ethos is to create hand crafted items for your home that echo the beauty and character that can be found all over this island we are proud to call Home, or in Manx Gaelic <em>Thie My Chree - "Home of my heart"</em>.</p>
            </div>
        </div>
-      </div>
-      <div class="small-10 large-8 small-offset-1 large-offset-2 cell content products">
+      </section>
+      <section class="small-10 large-8 small-offset-1 large-offset-2 cell content products">
         <h2>Products</h2>
         <p>At <span class="brand">Sticks <span class="and">&</span> Stones</span> we strive to produce all of our products using raw materials that have been sourced locally, on island. In most cases, unless specifically requested, we will not use new timber nor quarried stone.</p>
 
         <p>It is important to us that we recycle, reclaim and waste nothing. Our materials come from a variety of sources; beaches, industrial &amp; residential reclamation and pre-loved items.</p>
 
         <p>Take a look at our products pages or head on over to Etsy to view a great selection of quality, handmade items.</p>
-        
-        <p class="contact"><a href="mailto:hello@sticksandstones.im" title="Email Sticks &amp; Stones">hello@sticksandstones.im</a> | 07624 231251</p>
-      </div>
+      </section>
+      <footer class="small-12 large-12 cell">
+       <div class="grid-x grid-padding-x align-middle">
+           <div class="small-4 large-4 small-offset-4 large-offset-4 cell">
+               <p class="contact"><a href="mailto:hello@sticksandstones.im" title="Email Sticks &amp; Stones">hello@sticksandstones.im</a> | 07624 231251</p>
+               <a href="https://crafted.im" title="The website of CrafteD web services"><img src="./img/crafted-logo.svg" alt="Site designed &amp; developed by CrafteD" class="crafted-logo"></a>
+           </div>
+       </div>
+      </footer>
     </div>
   </div>
 
