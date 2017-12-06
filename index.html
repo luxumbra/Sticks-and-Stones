@@ -27,7 +27,7 @@
     <style>
         /*       
         red = #C80000 
-        
+        copy grey = #737779
         */
         body {
             background: #2E3030;
@@ -38,16 +38,37 @@
         div {
             text-align: center;
         }
+        .products {
+            text-align: left;
+        }
         .init {
             border-bottom: 5px solid #C80000;
-            height: 100vh;
+            min-height: 100%;
         }
-        .init .cell {
-            height: 50%;
-            max-height: 300px;
+        .init .leader,
+        footer {
+            background-color: #2B383E;
+            border-top: 3px solid #C80000;
+            border-bottom: 3px solid #C80000;
+            padding: 2rem 0;
+            -webkit-box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
+            -moz-box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
+            box-shadow: inset 0px 0px 98px -35px rgba(0,0,0,0.65);
         }
+        footer {
+            background-color: #22272F;
+        }
+        .init .content,
+        .header {
+            padding: 2rem 0;
+        } 
         h1 {
             text-align: center;
+        }
+        h2, h3 {
+            color: #737779;
+            font-family: 'IM Fell English SC', cursive;
+            font-size: 2.6rem;
         }
         img.logo {
             width: 75%;
@@ -55,11 +76,16 @@
             min-width: 200px;
             height: auto;
         }
+        .crafted-logo {
+            width: 25%;
+            max-width: 100%;
+        }
         
         p {
             color: #737779;
             font-size: 1.4rem;
             font-family: 'Ubuntu', cursive;
+            text-align: left;
         }
         .strapline,
         .contact {
@@ -69,7 +95,7 @@
             text-align: center; 
         }
         .strapline {
-            margin-bottom: 2rem;
+/*            margin-bottom: 2rem;*/
         }
         .contact {
             margin-top: 2rem;
@@ -89,18 +115,56 @@
             color: #C80000;
             font-family: 'Delius Swash Caps', cursive;
         }
+        
+        @media screen and (max-width: 39.9375em) {
+            h2, h3 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            
+            .strapline,
+            .contact {
+                font-size: 1.4rem;
+            }
+            .brand {
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 
 <body class="holding">
   <div class="grid-container">
     <div class="grid-x grid-padding-x align-middle init">
-      <div class="small-6 large-8 small-offset-3 large-offset-2 cell">
-        <img src="./img/logo.svg" alt="Sticks &amp; Stones" class="logo">
-        <p class="strapline">Artisan Wood and Stone work from the Isle of Man</p>
-        <p><span class="brand">Sticks <span class="and">&</span> Stones</span> is a small family run business based in Peel, on the Isle of Man.  Our ethos is to create hand crafted items for your home that echo the beauty and character that can be found all over this island we are proud to call, Home or <em>Thie My Chree</em>.</p>
-        <p class="contact"><a href="mailto:hello@sticksandstones.im" title="Email Sticks &amp; Stones">hello@sticksandstones.im</a> | 07624 231251</p>
-      </div>
+        <header class="small-10 large-8 small-offset-1 large-offset-2 cell header">
+         <img src="./img/logo.svg" alt="Sticks &amp; Stones" class="logo">
+         <p class="strapline">Artisan Wood and Stone work from the Isle of Man</p>
+        </header>
+      <section class="small-12 large-12 cell leader">
+       <div class="grid-x grid-padding-x align-middle">
+           <div class="small-10 large-8 small-offset-1 large-offset-2 cell">
+                       <p><span class="brand">Sticks <span class="and">&</span> Stones</span> is a small family run business based in Peel, on the Isle of Man.  Our ethos is to create hand crafted items for your home that echo the beauty and character that can be found all over this island we are proud to call Home, or in Manx Gaelic <em>Thie My Chree - "Home of my heart"</em>.</p>
+           </div>
+       </div>
+      </section>
+      <section class="small-10 large-8 small-offset-1 large-offset-2 cell content products">
+        <h2>Products</h2>
+        <p>At <span class="brand">Sticks <span class="and">&</span> Stones</span> we strive to produce all of our products using raw materials that have been sourced locally, on island. In most cases, unless specifically requested, we will not use new timber nor quarried stone.</p>
+
+        <p>It is important to us that we recycle, reclaim and waste nothing. Our materials come from a variety of sources; beaches, industrial &amp; residential reclamation and pre-loved items.</p>
+
+        <p>Our product pages are under development and we will be launching our Etsy shop in the New Year. Feel free to call or email us if you'd like to find out more.</p>
+      </section>
+      <footer class="small-12 large-12 cell">
+       <div class="grid-x grid-padding-x align-middle">
+           <div class="small-10 large-4 small-offset-1 large-offset-4 cell">
+               <p class="contact"><a href="mailto:hello@sticksandstones.im" title="Email Sticks &amp; Stones">hello@sticksandstones.im</a> | 07624 231251</p>
+               <a href="https://crafted.im" title="The website of CrafteD web services"><img src="./img/crafted-logo.svg" alt="Site designed &amp; developed by CrafteD" class="crafted-logo"></a>
+           </div>
+       </div>
+      </footer>
     </div>
   </div>
 
